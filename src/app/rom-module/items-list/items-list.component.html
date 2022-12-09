@@ -1,0 +1,22 @@
+<h3>{{title}} </h3>
+<app-linked-field *ngIf="edit"
+                  (createNewItem)="newItem($event)"
+                  (linkSelected)="linkSelect($event)"
+                  [type]="type"
+                  [provider]="provider">
+</app-linked-field>
+
+<fui-icon-button *ngIf="!edit"
+                 [icon]="addAction.icon | baseDir"
+                 [title]="addAction.title"
+                 (click)="edit=true">
+</fui-icon-button>
+
+<div *ngFor="let item of items$|async ">
+    <a style="padding: 5px;cursor: pointer;" (click)="clickActionEmmit(item)">{{item.title}}</a>
+    <fui-actions-button-group
+            [actions]="itemActions"
+            (emmitAction)="actionItem($event,item)">
+    </fui-actions-button-group>
+</div>
+

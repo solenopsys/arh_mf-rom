@@ -1,0 +1,94 @@
+{
+  "name": "rom-alexstorm",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/modules/rom-alexstorm/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/rom-alexstorm",
+        "index": "packages/modules/rom-alexstorm/src/index.html",
+        "main": "packages/modules/rom-alexstorm/src/main.ts",
+        "polyfills": "packages/modules/rom-alexstorm/src/polyfills.ts",
+        "tsConfig": "packages/modules/rom-alexstorm/tsconfig.app.json",
+        "assets": [
+          "packages/modules/rom-alexstorm/src/favicon.ico",
+          "packages/modules/rom-alexstorm/src/assets"
+        ],
+        "styles": ["packages/modules/rom-alexstorm/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "packages/modules/rom-alexstorm/src/environments/environment.ts",
+              "with": "packages/modules/rom-alexstorm/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "rom-alexstorm:build:production"
+        },
+        "development": {
+          "browserTarget": "rom-alexstorm:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "rom-alexstorm:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/modules/rom-alexstorm/**/*.ts",
+          "packages/modules/rom-alexstorm/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/modules/rom-alexstorm/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

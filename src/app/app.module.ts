@@ -1,0 +1,101 @@
+import {NgModule} from '@angular/core';
+
+import {RouterModule, Routes} from '@angular/router';
+import {TABLES_CONFS} from "./rom-module/tables.config";
+import {HttpClientModule} from "@angular/common/http";
+import { BootstrapComponent, FuiTemplatesModule, TABLE_PAGE } from "@solenopsys/uimatrix-templates";
+import {NgxEchartsModule} from "ngx-echarts";
+import {ResourcesState} from "./rom-module/stores/resources.store";
+import {ProcessesState} from "./rom-module/stores/processes.store";
+import {GoalState} from "./rom-module/stores/goals.store";
+import {LinkState} from "./rom-module/stores/links.store";
+import {environment} from "../environments/environment";
+import {TextPageComponent} from "@solenopsys/uimatrix-editor-content";
+import {VirtualPlanComponent} from "./rom-module/virtual-plan-component/virtual-plan.component";
+import {NewPlanComponent} from "./rom-module/new-plan/new-plan.component";
+import {PlanResourceEditorComponent} from "./rom-module/plan-resource-editor/plan-resource-editor.component";
+import {PlanProcessEditorComponent} from "./rom-module/plan-process-editor/plan-process-editor.component";
+import {RunningPageComponent} from "./rom-module/running-page/running-page.component";
+import {createNgxs} from "@solenopsys/lib-storage";
+import {ROMModule} from "./rom-module/r-o-m.module";
+import { FuiGridModule } from "@solenopsys/uimatrix-lists";
+import { BrowserModule } from "@angular/platform-browser";
+import { CommonModule } from "@angular/common";
+
+
+export const routes: Routes = [
+  {path: '', component: TextPageComponent, data: {uid: '0x2994d'}},
+  {
+    path: 'goals/plan', component: VirtualPlanComponent, children: [{
+      path: ':id', component: NewPlanComponent, children: [
+        {
+          path: 'resource/:id', component: PlanResourceEditorComponent
+        },
+        {
+          path: 'process/:id', component: PlanProcessEditorComponent
+        },
+      ]
+    }]
+  },
+  {path: 'running', component: RunningPageComponent},
+  {path: 'data', redirectTo: 'rom/data/time',pathMatch:'full'},
+  TABLE_PAGE(':table'),
+];
+
+
+
+export class MarkedLogger {
+
+  constructor(private label:string) {}
+
+  log(value: any, ...rest: any[]) {
+    if (!environment.production) {
+      console.log(this.label,": ",value, ...rest);
+    }
+  }
+
+  error(error: Error) {
+    //  this.errorHandler.handleError(error);
+  }
+
+  warn(value: any, ...rest: any[]) {
+    console.warn(this.label,": ",value, ...rest);
+  }
+}
+
+const log=new MarkedLogger(" ROM")
+
+
+export const IMPORTS_CONF = [
+  HttpClientModule,
+  ROMModule,
+  NgxEchartsModule,
+  FuiGridModule,
+  FuiTemplatesModule,
+  RouterModule.forChild(routes),
+  ...createNgxs(!environment.production,[ResourcesState, ProcessesState, GoalState, LinkState]),
+
+  BrowserModule,
+  CommonModule,
+]
+
+
+export const PROVIDERS_CONF = [
+  {provide: 'tables', useValue: TABLES_CONFS},
+  {provide: 'assets_dir', useValue: "/fm/modules/alexstorm/rom"},
+  {provide: 'mod_name', useValue: "rom"}
+]
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    ...IMPORTS_CONF
+  ],
+  providers: [
+    ...PROVIDERS_CONF
+  ],
+  bootstrap: [BootstrapComponent],
+})
+export class AppModule {
+}
