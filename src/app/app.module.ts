@@ -82,7 +82,7 @@ export const IMPORTS_CONF = [
 
 export const PROVIDERS_CONF = [
   {provide: 'tables', useValue: TABLES_CONFS},
-  {provide: 'assets_dir', useValue: "/fm/modules/alexstorm/rom"},
+  {provide: 'assets_dir', useValue: "/fm/modules/richteri/rom"},
   {provide: 'mod_name', useValue: "rom"}
 ]
 

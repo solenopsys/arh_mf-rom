@@ -114,7 +114,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/rom',
+      'dist/modules/richteri/rom',
       'packages/modules/rom/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
