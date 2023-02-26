@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 import {PlanUiService} from '../services/plan-ui.service';
 import {ProcessService} from '../services/process.service';
 import {append, patch, removeItem, updateItem} from '@ngxs/store/operators';
-import {ProcessData} from "@solenopsys/uimatrix-controls";
+import {ProcessData} from "@solenopsys/ui-controls";
 
 export class ProcessesStateModel {
     public processes!: ProcessData[];

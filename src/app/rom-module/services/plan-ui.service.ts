@@ -4,7 +4,7 @@ import {Goal} from '../stores/goals.store';
 import {firstValueFrom, Observable} from 'rxjs';
 import {DgraphService} from "@solenopsys/lib-dgraph";
 import {Link} from "../stores/link.model";
-import {ItemLink} from "@solenopsys/uimatrix-controls";
+import {ItemLink} from "@solenopsys/ui-controls";
 
 const transformProcess = (o: any) => {
   return {id: o.uid, title: o['rom.process']};

@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 import {PlanUiService} from '../services/plan-ui.service';
 import {ResourceService} from '../services/resource.service';
 import {append, patch, removeItem, updateItem} from '@ngxs/store/operators';
-import {ResourceData} from "@solenopsys/uimatrix-controls";
+import {ResourceData} from "@solenopsys/ui-controls";
 import {ProcessesStateModel} from "./processes.store";
 
 export class ResourcesStateModel {

@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {DgraphService} from "@solenopsys/lib-dgraph";
-import {GraphItem} from "@solenopsys/uimatrix-controls";
+import {GraphItem} from "@solenopsys/ui-controls";
 import {firstValueFrom} from "rxjs";
 
 @Injectable({

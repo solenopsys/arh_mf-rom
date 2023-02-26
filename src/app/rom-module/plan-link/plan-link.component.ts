@@ -12,7 +12,7 @@ import {
   ItemType,
   ProcessData,
   ResourceData
-} from "@solenopsys/uimatrix-controls";
+} from "@solenopsys/ui-controls";
 
 @Component({
     selector: 'app-plan-link',

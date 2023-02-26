@@ -13,7 +13,7 @@ import {
   ItemType,
   ProcessData,
   ResourceData
-} from "@solenopsys/uimatrix-controls";
+} from "@solenopsys/ui-controls";
 import {LoadLinks} from "../stores/link.model";
 
 

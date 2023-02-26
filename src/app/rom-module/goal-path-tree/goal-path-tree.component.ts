@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {PathDgraphService} from "../services/path-dgraph.service";
-import {GraphItem} from "@solenopsys/uimatrix-controls";
+import {GraphItem} from "@solenopsys/ui-controls";
 
 @Component({
   selector: 'app-goal-path-tree',

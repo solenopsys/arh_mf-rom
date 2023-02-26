@@ -4,7 +4,7 @@ import {LinkGoalProcess} from '../stores/processes.store';
 import {GoalState} from '../stores/goals.store';
 import {Store} from '@ngxs/store';
 import {LinkGoalResource} from '../stores/resources.store';
-import {FreeProvider, ItemAbstract, ItemType, ProcessData} from "@solenopsys/uimatrix-controls";
+import {FreeProvider, ItemAbstract, ItemType, ProcessData} from "@solenopsys/ui-controls";
 
 @Component({
     selector: 'app-linked-field',

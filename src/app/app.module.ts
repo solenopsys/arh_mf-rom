@@ -3,14 +3,14 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {TABLES_CONFS} from "./rom-module/tables.config";
 import {HttpClientModule} from "@angular/common/http";
-import { BootstrapComponent, FuiTemplatesModule, TABLE_PAGE } from "@solenopsys/uimatrix-templates";
+import { BootstrapComponent, FuiTemplatesModule, TABLE_PAGE } from "@solenopsys/ui-templates";
 import {NgxEchartsModule} from "ngx-echarts";
 import {ResourcesState} from "./rom-module/stores/resources.store";
 import {ProcessesState} from "./rom-module/stores/processes.store";
 import {GoalState} from "./rom-module/stores/goals.store";
 import {LinkState} from "./rom-module/stores/links.store";
 import {environment} from "../environments/environment";
-import {TextPageComponent} from "@solenopsys/uimatrix-editor-content";
+import {TextPageComponent} from "@solenopsys/ui-editor-content";
 import {VirtualPlanComponent} from "./rom-module/virtual-plan-component/virtual-plan.component";
 import {NewPlanComponent} from "./rom-module/new-plan/new-plan.component";
 import {PlanResourceEditorComponent} from "./rom-module/plan-resource-editor/plan-resource-editor.component";
@@ -18,7 +18,7 @@ import {PlanProcessEditorComponent} from "./rom-module/plan-process-editor/plan-
 import {RunningPageComponent} from "./rom-module/running-page/running-page.component";
 import {createNgxs} from "@solenopsys/lib-storage";
 import {ROMModule} from "./rom-module/r-o-m.module";
-import { FuiGridModule } from "@solenopsys/uimatrix-lists";
+import { FuiGridModule } from "@solenopsys/ui-lists";
 import { BrowserModule } from "@angular/platform-browser";
 import { CommonModule } from "@angular/common";
 

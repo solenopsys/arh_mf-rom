@@ -13,7 +13,7 @@ import {
   ItemAbstract,
   ItemType,
   ProcessData
-} from "@solenopsys/uimatrix-controls";
+} from "@solenopsys/ui-controls";
 
 @Component({
     selector: 'app-plan-process-editor',

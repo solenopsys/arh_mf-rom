@@ -11,7 +11,7 @@ import {
   ItemAbstract, ItemType,
   ProcessData,
   ResourceData
-} from "@solenopsys/uimatrix-controls";
+} from "@solenopsys/ui-controls";
 import {DgraphService} from "@solenopsys/lib-dgraph";
 
 
