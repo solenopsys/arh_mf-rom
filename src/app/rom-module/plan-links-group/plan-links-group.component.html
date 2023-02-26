@@ -9,10 +9,10 @@
     </app-linked-field>
 
 
-    <fui-icon-button  *ngIf="!edit"
+    <ui-icon-button  *ngIf="!edit"
             icon="/assets/icons/01-Interface-Essential/43-Remove-Add/add-bold.svg"
             title="Добавить"
-            (click)="edit=true"></fui-icon-button>
+            (click)="edit=true"></ui-icon-button>
 
     <div *ngFor="let pl of items$| async; let i =index;" style="display: flex;">
         <app-plan-link
@@ -22,11 +22,11 @@
 
         ><!--                (valueChange)="changeValue($event,pl)"-->
         </app-plan-link>
-        <fui-icon-button
+        <ui-icon-button
                 icon="/assets/icons/01-Interface-Essential/43-Remove-Add/remove-bold.svg"
                 title="Удалить"
                 (click)="remove(i)">
-        </fui-icon-button>
+        </ui-icon-button>
     </div>
 
 </div>

@@ -1,14 +1,14 @@
 <div style="display: flex;">
-    <fui-free-select-save
+    <ui-free-select-save
             [value]="value$ | async"
             (valueChange)="selectValue=$event"
             (save)="createNewItem.emit($event)"
             (newSelect)="newSelect=$event"
             [dataProvider]="provider">
-    </fui-free-select-save>
-    <fui-icon-button *ngIf="newSelect"
+    </ui-free-select-save>
+    <ui-icon-button *ngIf="newSelect"
                      icon="/assets/icons/01-Interface-Essential/27-Link-Unlink/hyperlink-2.svg"
                      title="Связать с целью"
                      (click)="linkToGoal()">
-    </fui-icon-button>
+    </ui-icon-button>
 </div>

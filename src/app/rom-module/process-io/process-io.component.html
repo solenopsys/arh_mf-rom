@@ -2,15 +2,15 @@
 
 
 
-  <fui-icon-button
+  <ui-icon-button
     [icon]="'/assets/icons/01-Interface-Essential/42-Multimedia-Controls/button-play.svg'"
-    (click)="runExecution()"></fui-icon-button>
+    (click)="runExecution()"></ui-icon-button>
 
-  <fui-icon-button
+  <ui-icon-button
     [icon]="process['showItem']?
     '/assets/icons/01-Interface-Essential/24-View/view-off.svg':
     '/assets/icons/01-Interface-Essential/24-View/view-1.svg'"
-    (click)="process['showItem']=!process['showItem']"></fui-icon-button>
+    (click)="process['showItem']=!process['showItem']"></ui-icon-button>
 
   <div style="padding: 5px;"> {{process.inResources?.length}} -> {{process.outResources?.length}}</div>
   <div *ngIf="process['showItem']" style="padding: 5px; width: 250px">
