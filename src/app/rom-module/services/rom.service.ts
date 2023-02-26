@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {map} from 'rxjs/operators';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {firstValueFrom} from "rxjs";
 
 @Injectable({

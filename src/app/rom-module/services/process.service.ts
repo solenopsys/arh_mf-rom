@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {convertGoalItems} from './plan-ui.service';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {ProcessData} from "@solenopsys/ui-controls";
 import {map} from "rxjs/operators";
 import {firstValueFrom} from "rxjs";

@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {map} from 'rxjs/operators';
 import {Goal} from '../stores/goals.store';
 import {firstValueFrom, Observable} from 'rxjs';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {Link} from "../stores/link.model";
 import {ItemLink} from "@solenopsys/ui-controls";
 

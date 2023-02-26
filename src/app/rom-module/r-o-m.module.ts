@@ -15,7 +15,7 @@ import { PlanLinkComponent } from "./plan-link/plan-link.component";
 import { PlanLinksGroupComponent } from "./plan-links-group/plan-links-group.component";
 import { ItemsListComponent } from "./items-list/items-list.component";
 import { LinkedFieldComponent } from "./linked-field/linked-field.component";
-import { UtilsGlobalsModule } from "@solenopsys/lib-globals";
+import { UtilsGlobalsModule } from "@solenopsys/fl-globals";
 import { FuiIconsModule } from "@solenopsys/ui-icons";
 import { ProcessIOComponent } from "./process-io/process-io.component";
 import { CommonModule } from "@angular/common";

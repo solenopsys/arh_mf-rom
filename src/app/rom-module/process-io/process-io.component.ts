@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {firstValueFrom} from "rxjs";
 
 

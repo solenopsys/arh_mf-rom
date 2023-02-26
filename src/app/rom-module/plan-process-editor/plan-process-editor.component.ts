@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
 import {GoalState} from '../stores/goals.store';
 import {ResourcesState} from '../stores/resources.store';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {
   Direction,
   FilterObservableProvider,

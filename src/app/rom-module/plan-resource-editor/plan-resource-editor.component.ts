@@ -12,7 +12,7 @@ import {
   ProcessData,
   ResourceData
 } from "@solenopsys/ui-controls";
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 
 
 @Component({

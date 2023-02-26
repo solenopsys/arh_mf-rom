@@ -16,7 +16,7 @@ import {NewPlanComponent} from "./rom-module/new-plan/new-plan.component";
 import {PlanResourceEditorComponent} from "./rom-module/plan-resource-editor/plan-resource-editor.component";
 import {PlanProcessEditorComponent} from "./rom-module/plan-process-editor/plan-process-editor.component";
 import {RunningPageComponent} from "./rom-module/running-page/running-page.component";
-import {createNgxs} from "@solenopsys/lib-storage";
+import {createNgxs} from "@solenopsys/fl-storage";
 import {ROMModule} from "./rom-module/r-o-m.module";
 import { FuiGridModule } from "@solenopsys/ui-lists";
 import { BrowserModule } from "@angular/platform-browser";
