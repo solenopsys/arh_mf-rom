@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {TABLES_CONFS} from "./rom-module/tables.config";
 import {HttpClientModule} from "@angular/common/http";
-import { BootstrapComponent, FuiTemplatesModule, TABLE_PAGE } from "@solenopsys/ui-templates";
+import { BootstrapComponent, UITemplatesModule, TABLE_PAGE } from "@solenopsys/ui-templates";
 import {NgxEchartsModule} from "ngx-echarts";
 import {ResourcesState} from "./rom-module/stores/resources.store";
 import {ProcessesState} from "./rom-module/stores/processes.store";
@@ -18,7 +18,7 @@ import {PlanProcessEditorComponent} from "./rom-module/plan-process-editor/plan-
 import {RunningPageComponent} from "./rom-module/running-page/running-page.component";
 import {createNgxs} from "@solenopsys/fl-storage";
 import {ROMModule} from "./rom-module/r-o-m.module";
-import { FuiGridModule } from "@solenopsys/ui-lists";
+import { UIGridModule } from "@solenopsys/ui-lists";
 import { BrowserModule } from "@angular/platform-browser";
 import { CommonModule } from "@angular/common";
 
@@ -70,8 +70,8 @@ export const IMPORTS_CONF = [
   HttpClientModule,
   ROMModule,
   NgxEchartsModule,
-  FuiGridModule,
-  FuiTemplatesModule,
+  UIListsModule,
+  UITemplatesModule,
   RouterModule.forChild(routes),
   ...createNgxs(!environment.production,[ResourcesState, ProcessesState, GoalState, LinkState]),
 
