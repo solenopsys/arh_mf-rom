@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fm-rom-richteri",
+  "name": "@solenopsys/mf-rom",
   "version": "0.9.1",
   "scripts": {
     "test": "node index.js",

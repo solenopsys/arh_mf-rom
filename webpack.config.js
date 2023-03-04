@@ -48,7 +48,7 @@ module.exports = {
       name: 'rom',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/rom/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-rom/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -114,8 +114,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/rom',
-      'packages/modules/rom/src/assets/menu.json'
+      'dist/modules/mf-richteri/rom',
+      'packages/modules/mf-rom/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],
