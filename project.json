@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/rom-richteri",
+        "outputPath": "dist/modules/rom-richteri",
         "index": "packages/modules/rom-richteri/src/index.html",
         "main": "packages/modules/rom-richteri/src/main.ts",
         "polyfills": "packages/modules/rom-richteri/src/polyfills.ts",
