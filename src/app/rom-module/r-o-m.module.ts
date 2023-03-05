@@ -5,8 +5,6 @@ import { RunningPageComponent } from "./running-page/running-page.component";
 import { GoalPathTreeComponent } from "./goal-path-tree/goal-path-tree.component";
 import { FormsModule } from "@angular/forms";
 import { NgxEchartsModule } from "ngx-echarts";
-import { UINavigateModule } from "@solenopsys/ui-layouts";
-import { UIComponentsModule } from "@solenopsys/ui-controls";
 import { VirtualPlanComponent } from "./virtual-plan-component/virtual-plan.component";
 import { NewPlanComponent } from "./new-plan/new-plan.component";
 import { PlanResourceEditorComponent } from "./plan-resource-editor/plan-resource-editor.component";
@@ -21,6 +19,8 @@ import { ProcessIOComponent } from "./process-io/process-io.component";
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { UtilsModule } from "@solenopsys/ui-utils";
+import {UINavigateModule} from "@solenopsys/ui-navigate";
+import {UIControlsModule} from "@solenopsys/ui-controls";
 
 
 @NgModule({
@@ -45,7 +45,7 @@ import { UtilsModule } from "@solenopsys/ui-utils";
     RouterModule,
     UtilsModule,
     UINavigateModule,
-    UIComponentsModule,
+    UIControlsModule,
     NgxEchartsModule.forRoot({
       echarts: () => import("echarts")
     }),

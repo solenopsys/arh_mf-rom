@@ -14,9 +14,9 @@
 
 <div *ngFor="let item of items$|async ">
     <a style="padding: 5px;cursor: pointer;" (click)="clickActionEmmit(item)">{{item.title}}</a>
-    <ui-actions-button-group
+    <ui-button-group
             [actions]="itemActions"
             (emmitAction)="actionItem($event,item)">
-    </ui-actions-button-group>
+    </ui-button-group>
 </div>
 

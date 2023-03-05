@@ -10,7 +10,6 @@ import {ProcessesState} from "./rom-module/stores/processes.store";
 import {GoalState} from "./rom-module/stores/goals.store";
 import {LinkState} from "./rom-module/stores/links.store";
 import {environment} from "../environments/environment";
-import {TextPageComponent} from "@solenopsys/ui-editor-content";
 import {VirtualPlanComponent} from "./rom-module/virtual-plan-component/virtual-plan.component";
 import {NewPlanComponent} from "./rom-module/new-plan/new-plan.component";
 import {PlanResourceEditorComponent} from "./rom-module/plan-resource-editor/plan-resource-editor.component";
@@ -18,13 +17,13 @@ import {PlanProcessEditorComponent} from "./rom-module/plan-process-editor/plan-
 import {RunningPageComponent} from "./rom-module/running-page/running-page.component";
 import {createNgxs} from "@solenopsys/fl-storage";
 import {ROMModule} from "./rom-module/r-o-m.module";
-import { UIGridModule } from "@solenopsys/ui-lists";
+import { UIListsModule} from "@solenopsys/ui-lists";
 import { BrowserModule } from "@angular/platform-browser";
 import { CommonModule } from "@angular/common";
 
 
 export const routes: Routes = [
-  {path: '', component: TextPageComponent, data: {uid: '0x2994d'}},
+  //{path: '', component: TextPageComponent, data: {uid: '0x2994d'}},
   {
     path: 'goals/plan', component: VirtualPlanComponent, children: [{
       path: ':id', component: NewPlanComponent, children: [

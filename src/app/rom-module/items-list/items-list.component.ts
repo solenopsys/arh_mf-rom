@@ -5,7 +5,8 @@ import {Navigate} from '@ngxs/router-plugin';
 import {Store} from '@ngxs/store';
 import {GoalState} from '../stores/goals.store';
 import {AddResourceToGoal} from '../stores/resources.store';
-import {ActionButton, FreeProvider, ItemType} from "@solenopsys/ui-controls";
+import {ActionButton,  ItemType} from "@solenopsys/ui-controls";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 
 @Component({

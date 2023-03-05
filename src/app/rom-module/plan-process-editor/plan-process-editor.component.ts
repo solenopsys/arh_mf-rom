@@ -9,11 +9,11 @@ import {DgraphService} from "@solenopsys/fl-dgraph";
 import {
   Direction,
   FilterObservableProvider,
-  FreeProvider,
   ItemAbstract,
   ItemType,
   ProcessData
 } from "@solenopsys/ui-controls";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 @Component({
     selector: 'app-plan-process-editor',

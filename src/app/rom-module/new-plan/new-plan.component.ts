@@ -9,12 +9,13 @@ import {LoadProcesses, ProcessesState, UnlinkGoalProcess} from '../stores/proces
 
 import {
   FilterObservableProvider,
-  FreeProvider,
+
   ItemType,
   ProcessData,
   ResourceData
 } from "@solenopsys/ui-controls";
 import {LoadLinks} from "../stores/link.model";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 
 @Component({

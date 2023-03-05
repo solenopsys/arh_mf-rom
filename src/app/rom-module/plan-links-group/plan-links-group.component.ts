@@ -4,9 +4,10 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {GoalState} from '../stores/goals.store';
 import {Store} from '@ngxs/store';
 import {Observable} from "rxjs";
-import {Direction, FreeProvider, ItemLink, ItemType} from "@solenopsys/ui-controls";
+import {Direction,  ItemLink, ItemType} from "@solenopsys/ui-controls";
 import {LinkState} from "../stores/links.store";
 import {AddDraftLink, Link} from "../stores/link.model";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 
 const NEW = 'new';

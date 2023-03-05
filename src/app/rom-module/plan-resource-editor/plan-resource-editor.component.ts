@@ -7,12 +7,13 @@ import {GoalState} from '../stores/goals.store';
 import {Navigate} from '@ngxs/router-plugin';
 import {
   FilterObservableProvider,
-  FreeProvider,
+
   ItemAbstract, ItemType,
   ProcessData,
   ResourceData
 } from "@solenopsys/ui-controls";
 import {DgraphService} from "@solenopsys/fl-dgraph";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 
 @Component({
