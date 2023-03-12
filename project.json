@@ -18,7 +18,7 @@
           "packages/modules/mf-rom/src/favicon.ico",
           "packages/modules/mf-rom/src/assets"
         ],
-        "styles": ["packages/modules/mf-rom/src/styles.css"],
+        "styles": ["packages/modules/mf-rom/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
