@@ -21,7 +21,7 @@ import {FreeProvider} from "@solenopsys/ui-utils";
 @Component({
     selector: 'app-new-plan',
     templateUrl: './new-plan.component.html',
-    styleUrls: ['./new-plan.component.css']
+    styleUrls: ['./new-plan.component.scss']
 })
 export class NewPlanComponent implements OnInit {
     goalId: string;

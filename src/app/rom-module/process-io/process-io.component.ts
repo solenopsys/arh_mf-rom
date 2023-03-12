@@ -6,7 +6,7 @@ import {firstValueFrom} from "rxjs";
 @Component({
   selector: 'app-process-io',
   templateUrl: './process-io.component.html',
-  styleUrls: ['./process-io.component.css']
+  styleUrls: ['./process-io.component.scss']
 })
 export class ProcessIOComponent implements OnInit {
 

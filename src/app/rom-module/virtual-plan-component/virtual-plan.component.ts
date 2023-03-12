@@ -7,7 +7,7 @@ import {Goal, GoalState, LoadGoals} from '../stores/goals.store';
 @Component({
     selector: 'app-virtual-plan-component',
     templateUrl: './virtual-plan.component.html',
-    styleUrls: ['./virtual-plan.component.css']
+    styleUrls: ['./virtual-plan.component.scss']
 })
 export class VirtualPlanComponent implements OnInit {
     goals: any[];

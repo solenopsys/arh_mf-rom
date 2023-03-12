@@ -15,7 +15,7 @@ const NEW = 'new';
 @Component({
   selector: 'app-plan-links-group',
   templateUrl: './plan-links-group.component.html',
-  styleUrls: ['./plan-links-group.component.css']
+  styleUrls: ['./plan-links-group.component.scss']
 })
 export class PlanLinksGroupComponent implements OnInit {
 

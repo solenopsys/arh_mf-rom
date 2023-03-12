@@ -10,7 +10,7 @@ import {FreeProvider} from "@solenopsys/ui-utils";
 @Component({
     selector: 'app-linked-field',
     templateUrl: './linked-field.component.html',
-    styleUrls: ['./linked-field.component.css']
+    styleUrls: ['./linked-field.component.scss']
 })
 export class LinkedFieldComponent implements OnInit {
 

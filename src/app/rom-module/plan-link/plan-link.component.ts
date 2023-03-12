@@ -17,7 +17,7 @@ import {
 @Component({
     selector: 'app-plan-link',
     templateUrl: './plan-link.component.html',
-    styleUrls: ['./plan-link.component.css']
+    styleUrls: ['./plan-link.component.scss']
 })
 export class PlanLinkComponent implements OnInit {
     @Select(ProcessesState.getAll) processesAll$!: Observable<ProcessData[]>;

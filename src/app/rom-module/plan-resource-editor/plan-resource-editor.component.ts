@@ -19,7 +19,7 @@ import {FreeProvider} from "@solenopsys/ui-utils";
 @Component({
     selector: 'app-plan-resource-editor',
     templateUrl: './plan-resource-editor.component.html',
-    styleUrls: ['./plan-resource-editor.component.css']
+    styleUrls: ['./plan-resource-editor.component.scss']
 })
 export class PlanResourceEditorComponent implements OnInit {
     @Select(ResourcesState.getAll) resourcesAll$!: Observable<ResourceData[]>;

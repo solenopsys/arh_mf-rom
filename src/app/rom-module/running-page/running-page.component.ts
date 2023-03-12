@@ -4,7 +4,7 @@ import {RomService} from "../services/rom.service";
 @Component({
     selector: 'app-running-page',
     templateUrl: './running-page.component.html',
-    styleUrls: ['./running-page.component.css']
+    styleUrls: ['./running-page.component.scss']
 })
 export class RunningPageComponent implements OnInit {
 

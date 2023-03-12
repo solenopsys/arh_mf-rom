@@ -18,7 +18,7 @@ import {FreeProvider} from "@solenopsys/ui-utils";
 @Component({
     selector: 'app-plan-process-editor',
     templateUrl: './plan-process-editor.component.html',
-    styleUrls: ['./plan-process-editor.component.css']
+    styleUrls: ['./plan-process-editor.component.scss']
 })
 export class PlanProcessEditorComponent implements OnInit {
     @Select(ProcessesState.getAll) processesAll$!: Observable<ProcessData[]>;

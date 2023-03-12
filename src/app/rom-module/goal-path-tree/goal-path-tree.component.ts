@@ -5,7 +5,7 @@ import {GraphItem} from "@solenopsys/ui-controls";
 @Component({
   selector: 'app-goal-path-tree',
   templateUrl: './goal-path-tree.component.html',
-  styleUrls: ['./goal-path-tree.component.css']
+  styleUrls: ['./goal-path-tree.component.scss']
 })
 export class GoalPathTreeComponent implements OnInit {
 
