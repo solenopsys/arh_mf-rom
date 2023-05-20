@@ -81,7 +81,7 @@ export const IMPORTS_CONF = [
 
 export const PROVIDERS_CONF = [
   {provide: 'tables', useValue: TABLES_CONFS},
-  {provide: 'assets_dir', useValue: "/fm/modules/mf-richteri/rom"},
+  {provide: 'assets_dir', useValue: "/fm/modules/mf-rom"},
   {provide: 'mod_name', useValue: "rom"}
 ]
 
