@@ -5,7 +5,7 @@ import {GoalState} from '../stores/goals.store';
 import {Store} from '@ngxs/store';
 import {LinkGoalResource} from '../stores/resources.store';
 import { ItemAbstract, ItemType, ProcessData} from "@solenopsys/ui-controls";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 @Component({
     selector: 'app-linked-field',

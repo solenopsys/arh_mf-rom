@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 import {Direction,  ItemLink, ItemType} from "@solenopsys/ui-controls";
 import {LinkState} from "../stores/links.store";
 import {AddDraftLink, Link} from "../stores/link.model";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 
 const NEW = 'new';

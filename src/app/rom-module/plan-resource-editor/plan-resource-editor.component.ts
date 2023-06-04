@@ -13,7 +13,7 @@ import {
   ResourceData
 } from "@solenopsys/ui-controls";
 import {DgraphService} from "@solenopsys/fl-dgraph";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 
 @Component({

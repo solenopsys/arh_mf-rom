@@ -13,7 +13,7 @@ import {
   ItemType,
   ProcessData
 } from "@solenopsys/ui-controls";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 @Component({
     selector: 'app-plan-process-editor',

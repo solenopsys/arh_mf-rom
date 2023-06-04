@@ -15,7 +15,7 @@ import {
   ResourceData
 } from "@solenopsys/ui-controls";
 import {LoadLinks} from "../stores/link.model";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 
 @Component({

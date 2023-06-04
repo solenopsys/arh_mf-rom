@@ -6,7 +6,7 @@ import {Store} from '@ngxs/store';
 import {GoalState} from '../stores/goals.store';
 import {AddResourceToGoal} from '../stores/resources.store';
 import {ActionButton,  ItemType} from "@solenopsys/ui-controls";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "@solenopsys/ui-controls";
 
 
 @Component({
