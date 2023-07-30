@@ -2,7 +2,7 @@
   "name": "@solenopsys/mf-rom",
   "version": "0.1.0",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.packages.json"
+    "build": "vbuild"
   },
   "peerDependencies": {
     "echarts": "^5.4.0",
