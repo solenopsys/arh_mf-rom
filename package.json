@@ -1,9 +1,10 @@
 {
   "name": "@solenopsys/mf-rom",
   "version": "0.1.0",
-  "scripts": {
-    "build": "vbuild"
+   "scripts": {
+    "build": "vite build  -c ../../../lib.config.js"
   },
+  "type": "module",
   "peerDependencies": {
     "echarts": "^5.4.0",
     "ngx-echarts": "^16.0.0",
